@@ -10,4 +10,4 @@ Example: ./run.sh 1
 How to add a new test-case:
 1) Add a folder TestCases/TestCase<num> 
 2) Put the java code as TestCases/TestCase<num>/Code.java
-3) <Optional> To get coverage for a particular test suite, add the code paths exercised by the test suite as TestCases/TestCase<num>/test.txt
+3) Optional: To get coverage for a particular test suite, add the code paths exercised by the test suite as TestCases/TestCase<num>/test.txt
