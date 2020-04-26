@@ -26,6 +26,10 @@ public class PrimePath {
         PrimePath.initPaths();
         PrimePath.findPaths();
         //PrimePath._printPaths();
+	System.out.println();
+	System.out.println("***********************************");
+	System.out.println("Prime Paths:");
+	System.out.println("------------");
         for (String path : paths) {
             //String savePath = path;
             StringBuffer strbuf = new StringBuffer();
@@ -52,10 +56,12 @@ public class PrimePath {
                 }
                 strbuf.append("]");
                 primePaths.put(new String(strbuf),0);
-                System.out.println(strbuf);
+                System.out.println("--> " + strbuf);
             }
         }
 
+	System.out.println();	
+	System.out.println("***********************************");
         if(args.length == 2){
             PrimePath.testPathCoverage(args[1]);
         }
@@ -220,7 +226,8 @@ public class PrimePath {
                     count++;
                 }
             }
-            System.out.println("Prime path coverage is: " + (count/primePaths.size())*100 + "%");
+            System.out.println("Prime path coverage: " + (count/primePaths.size())*100 + "%");
+	    System.out.println("***********************************");
             reader.close();
         }
         catch (IOException e) {

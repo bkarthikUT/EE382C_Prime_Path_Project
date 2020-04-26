@@ -8,7 +8,7 @@ code="Code.java"
 testcase="test.txt"
 
 wget https://mirrors.gigenet.com/apache//commons/bcel/binaries/bcel-6.4.1-bin.tar.gz
-tar -zxvf  bcel-6.4.1-bin.tar.gz >/dev/null;
+tar -zxvf  bcel-6.4.1-bin.tar.gz >/dev/null 2>&1;
 
 javac -cp bcel-6.4.1/bcel-6.4.1.jar:. proj/CFG.java proj/GraphGenerator.java proj/PrimePath.java 
 
