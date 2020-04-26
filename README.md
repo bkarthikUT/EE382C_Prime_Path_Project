@@ -4,7 +4,8 @@
 This project when run provides the list of Primepaths for a given Java program and also coverage percentage for a  test suite.
 
 How to run the project:
-./run.sh <<test-case-number>>
+./run.sh \<test-case-number\>
+
 Example: ./run.sh 1
 
 How to add a new test-case:
