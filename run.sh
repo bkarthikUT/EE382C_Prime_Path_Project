@@ -7,6 +7,11 @@ folder=TestCases/TestCase$1
 code="Code.java"
 testcase="test.txt"
 
+if ! which wget > /dev/null; then
+	echo "Please install wget and try again!"
+	exit;
+fi
+
 wget https://mirrors.gigenet.com/apache//commons/bcel/binaries/bcel-6.4.1-bin.tar.gz
 tar -zxvf  bcel-6.4.1-bin.tar.gz >/dev/null 2>&1;
 
